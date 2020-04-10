@@ -23,5 +23,6 @@ dependencies:
 dev_dependencies:
   test: '^1.3.0'
   build_runner:
+  pana: '^0.13.4'
 
 
