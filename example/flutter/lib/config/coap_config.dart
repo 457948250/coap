@@ -7,7 +7,6 @@ import 'package:coap/coap.dart';
 /// the config file to contain only those entries that override the defaults.
 /// The file can't be empty, so version must as a minimum be present.
 class CoapConfig extends DefaultCoapConfig {
-
   CoapConfig() {
     DefaultCoapConfig.inst = this;
   }
@@ -95,5 +94,4 @@ class CoapConfig extends DefaultCoapConfig {
 
   @override
   bool get logInfo => true;
-
 }

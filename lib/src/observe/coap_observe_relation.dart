@@ -100,7 +100,8 @@ class CoapObserveRelation {
     check = check ||
         _interestCheckTime
             .add(Duration(
-                milliseconds: DefaultCoapConfig.inst.notificationCheckIntervalTime))
+                milliseconds:
+                    DefaultCoapConfig.inst.notificationCheckIntervalTime))
             .isBefore(now);
     check = check ||
         (++_interestCheckCounter >=
