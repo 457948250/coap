@@ -59,8 +59,7 @@ class CoapUDPChannel extends CoapIChannel {
 
   @override
   void receive() {
-    final rxEvent =
-        CoapDataReceivedEvent(_buff, _address);
+    final rxEvent = CoapDataReceivedEvent(_buff, _address);
     _eventBus.fire(rxEvent);
     _buff.clear();
   }

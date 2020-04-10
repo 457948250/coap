@@ -4,10 +4,6 @@ import 'package:build/build.dart';
 import 'package:yaml/yaml.dart';
 import 'package:path/path.dart' as path;
 
-// ignore_for_file: omit_local_variable_types, unnecessary_final
-// ignore_for_file: public_member_api_docs, cascade_invocations
-// ignore_for_file: always_specify_types, avoid_print
-
 Builder configBuilder(BuilderOptions options) => _ConfigBuilder();
 
 class _ConfigBuilder extends Builder {
@@ -20,9 +16,9 @@ class _ConfigBuilder extends Builder {
 
   @override
   FutureOr<void> build(BuildStep buildStep) async {
-    final AssetId id = buildStep.inputId;
+    final id = buildStep.inputId;
 
-    final String fileName = path.basename(id.path);
+    final fileName = path.basename(id.path);
     if (!fileName.startsWith(_defaultConfigFileName)) {
       print('No $_defaultConfigFileName file found!');
       return;
@@ -70,7 +66,7 @@ ${_generateDataScript(data)}
 """;
 
 String _generateDataScript(YamlMap data) {
-  final StringBuffer buff = StringBuffer();
+  final buff = StringBuffer();
   data.forEach((k, v) {
     buff.writeln('');
     buff.writeln('  @override');
