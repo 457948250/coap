@@ -7,8 +7,6 @@
 
 part of coap;
 
-// ignore_for_file: unnecessary_final
-
 /// Abstract networking class, allows different implementations for
 /// UDP, test etc.
 abstract class CoapINetwork {
