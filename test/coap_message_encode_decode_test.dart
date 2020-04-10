@@ -5,12 +5,15 @@
  * Copyright :  S.Hamblett
  */
 import 'package:coap/coap.dart';
+import 'package:coap/config/coap_config_logging.dart';
 import 'package:collection/collection.dart';
 import 'package:test/test.dart';
 import 'package:typed_data/typed_data.dart' as typed;
 
 void main() {
   const leq = ListEquality<dynamic>();
+  // ignore: unused_local_variable
+  final DefaultCoapConfig conf = CoapConfigLogging();
   group('COAP All', () {
     final check = <String, List<List<int>>>{
       'draft-ietf-core-coap-03': <List<int>>[
