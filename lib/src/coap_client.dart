@@ -93,8 +93,7 @@ class CoapClient {
       request.uri = uri;
       request = await prepare(request);
       this.request = request;
-      // ignore: prefer_if_null_operators
-      final timeoutToUse = timeout == null ? this.timeout : timeout;
+      final timeoutToUse = timeout ?? this.timeout;
       await request.send().waitForResponse(timeoutToUse);
       return request.isRejected;
     } on Exception catch (e) {

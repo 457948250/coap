@@ -45,7 +45,6 @@ FutureOr<void> main(List<String> args) async {
   await client.get();
 
   // Getting responses form the observable resource
-  // ignore: avoid_types_on_closure_parameters
   request.responses.listen((CoapResponse response) {
     print('EXAMPLE - payload: ${response.payloadString}');
   });

@@ -15,7 +15,6 @@ class CoapEmptyMessage extends CoapMessage {
 
   /// Create a new acknowledgment for the specified message.
   /// Returns the acknowledgment.
-  // ignore: prefer_constructors_over_static_methods
   static CoapEmptyMessage newACK(CoapMessage message) {
     final ack = CoapEmptyMessage(CoapMessageType.ack);
     ack.id = message.id;
@@ -26,7 +25,6 @@ class CoapEmptyMessage extends CoapMessage {
 
   /// Create a new reset message for the specified message.
   /// Return the reset.
-  // ignore: prefer_constructors_over_static_methods
   static CoapEmptyMessage newRST(CoapMessage message) {
     final rst = CoapEmptyMessage(CoapMessageType.rst);
     rst.id = message.id;
@@ -37,7 +35,6 @@ class CoapEmptyMessage extends CoapMessage {
 
   /// Create a new empty message confirmable for the specified message.
   /// Return the empty
-  // ignore: prefer_constructors_over_static_methods
   static CoapEmptyMessage newCon(CoapMessage message) {
     final ep = CoapEmptyMessage(CoapMessageType.con);
     ep.token = CoapConstants.emptyToken;

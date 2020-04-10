@@ -712,7 +712,6 @@ class CoapMessage {
   }
 
   /// Set the location path from a string
-  // ignore: avoid_setters_without_getters
   set locationPath(String value) {
     // Check for '..' or '.' are invalid values
     if (value.contains('..') || value.contains('.')) {

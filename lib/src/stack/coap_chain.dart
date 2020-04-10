@@ -223,7 +223,6 @@ class CoapChain<TChain, TFilter, TNextFilter>
                     String name,
                     TFilter filter) =>
                 CoapEntry<dynamic, dynamic>(
-                    // ignore: avoid_as
                     chain as CoapChain<dynamic, dynamic, dynamic>,
                     prev,
                     next,

@@ -55,7 +55,6 @@ class CoapCancellableAsyncSleep {
   }
 }
 
-// ignore: avoid_classes_with_only_static_members
 /// Utility methods
 class CoapUtil {
   /// Insertion sort, to make the options list stably ordered.

@@ -16,7 +16,6 @@ abstract class CoapINetwork {
   /// The port
   int port;
 
-  // ignore: close_sinks
   final StreamController<List<int>> _data =
       StreamController<List<int>>.broadcast();
 

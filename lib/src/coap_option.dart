@@ -23,7 +23,6 @@ class CoapOption {
   typed.Uint8Buffer valueBytes;
 
   /// From list
-  // ignore: avoid_setters_without_getters
   set valueBytesList(List<int> bytes) {
     valueBytes.clear();
     valueBytes.addAll(bytes);
@@ -216,7 +215,6 @@ class CoapOption {
   }
 
   /// Creates an option.
-  // ignore: prefer_constructors_over_static_methods
   static CoapOption create(int type) {
     switch (type) {
       case optionTypeBlock1:
