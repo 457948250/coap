@@ -67,6 +67,7 @@ class $className extends DefaultCoapConfig {
     DefaultCoapConfig.inst = this;
   }
  
+  @override
   CoapISpec spec;
 ${_generateDataScript(data)}
 }

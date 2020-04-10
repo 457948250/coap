@@ -11,7 +11,8 @@ class CoapConfig extends DefaultCoapConfig {
   CoapConfig() {
     DefaultCoapConfig.inst = this;
   }
- 
+
+  @override
   CoapISpec spec;
 
   @override
